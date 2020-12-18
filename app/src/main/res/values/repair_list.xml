@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "engine">
+        <item>엔진 오일</item>
+        <item>브레이크 오일</item>
+        <item>스티어링 오일</item>
+        <item>냉각수(부동액)</item>
+        <item>와이퍼 워셔액</item>
+        <item>에어컨 필터</item>
+        <item>에어 필터 (흡기 필터)</item>
+        <item>오일 필터</item>
+        <item>연료 필터</item>
+        <item>배터리</item>
+        <item>인젝션</item>
+        <item>점화 플러그</item>
+        <item>점화 코일</item>
+    </string-array>
+    <string-array name="front">
+        <item>와이퍼 블레이드</item>
+        <item>와이퍼 암</item>
+        <item>에어컨 냉매</item>
+    </string-array>
+    <string-array name="bottom">
+        <item>타이어</item>
+        <item>휠 얼라인먼트</item>
+        <item>휠 밸런스</item>
+        <item>등속 조인트</item>
+    </string-array>
+    <string-array name="suspension">
+        <item>활대링크</item>
+        <item>활대부싱</item>
+        <item>쇼바</item>
+        <item>스프링</item>
+        <item>어퍼암</item>
+        <item>로워암</item>
+    </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id = "@+id/menu_one"
+        app:showAsAction="ifRoom"
+        android:title="RESET"
+        android:enabled="true"
+        android:icon = "@drawable/refresh"/>
+    <item
+        android:id = "@+id/menu_two"
+        app:showAsAction="ifRoom"
+        android:title = "TIPS"
+        android:enabled="true"
+        android:icon = "@drawable/tips"/>
+    <item
+        android:id = "@+id/menu_three"
+        app:showAsAction="ifRoom"
+        android:title = "SETTING"
+        android:enabled="true"
+        android:icon = "@drawable/option_2" />
+</menu>

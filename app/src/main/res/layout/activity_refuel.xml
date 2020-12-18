@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.all_car.RefuelActivity"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginTop="20dp"/>
+    <android.support.v4.widget.NestedScrollView
+        android:id = "@+id/refuelScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <LinearLayout
+            android:id = "@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id = "@+id/addRefuelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id = "@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/binggrae"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text = "날짜"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id = "@+id/textLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/binggrae"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text = "장소"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id = "@+id/textPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/binggrae"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text = "가격"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id = "@+id/addRefuelRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/block"
+        android:textStyle="bold"
+        android:fontFamily="@font/binggrae"
+        android:textColor="@color/black"
+        android:text = "추가하기" />
+</LinearLayout>

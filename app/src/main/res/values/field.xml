@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "spinnerArray">
+        <item>naver.com</item>
+        <item>daum.net</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>직접 입력</item>
+    </string-array>
+</resources>

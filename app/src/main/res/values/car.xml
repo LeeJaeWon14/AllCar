@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hyundai">
+        <item>엑센트</item>
+        <item>아반떼</item>
+        <item>쏘나타</item>
+        <item>그랜져</item>
+        <item>에쿠스</item>
+        <item>베뉴</item>
+        <item>코나</item>
+        <item>투싼</item>
+        <item>싼타페</item>
+        <item>팰리세이드</item>
+        <item>스타렉스</item>
+    </string-array>
+    <string-array name="kia">
+        <item>모닝</item>
+        <item>레이</item>
+        <item>프라이드</item>
+        <item>포르테</item>
+        <item>K3</item>
+        <item>K5</item>
+        <item>K7</item>
+        <item>K9</item>
+        <item>스토닉</item>
+        <item>셀토스</item>
+        <item>스포티지</item>
+        <item>쏘렌토</item>
+        <item>모하비</item>
+        <item>카니발</item>
+    </string-array>
+    <string-array name="chevorlet">
+        <item>스파크</item>
+        <item>크루즈</item>
+        <item>말리부</item>
+        <item>임팔라</item>
+        <item>트랙스</item>
+        <item>이쿼녹스</item>
+        <item>트래버스</item>
+        <item>콜로라도</item>
+        <item>카마로</item>
+        <item>볼트 EV</item>
+    </string-array>
+    <string-array name="renault">
+        <item>클리오</item>
+        <item>SM3</item>
+        <item>SM5</item>
+        <item>SM6</item>
+        <item>SM7</item>
+        <item>QM3</item>
+        <item>QM5</item>
+        <item>QM6</item>
+    </string-array>
+    <string-array name="ssangyong">
+        <item>티볼리</item>
+        <item>코란도</item>
+        <item>코란도 스포츠</item>
+        <item>렉스턴</item>
+        <item>렉스턴 스포츠</item>
+        <item>체어맨</item>
+    </string-array>
+</resources>

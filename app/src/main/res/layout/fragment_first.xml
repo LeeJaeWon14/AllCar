@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity = "center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp" >
+        <LinearLayout
+            android:id = "@+id/userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:id = "@+id/userInfo_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "User"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/binggrae" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id = "@+id/userInfo_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "제 조 : "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae" />
+                    <TextView
+                        android:id = "@+id/userInfo_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "차 종 : "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae" />
+                    <TextView
+                        android:id = "@+id/userInfo_trim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "트 림 : "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae" />
+                    <TextView
+                        android:id = "@+id/userInfo_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "등 록 : "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae" />
+                </LinearLayout>
+                <ImageView
+                    android:id = "@+id/brand_logo"
+                    android:layout_width="95dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/allDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "누적주행거리"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/binggrae" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id = "@+id/viewAllDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:text = "이 곳을 눌러 입력하세요"/>
+                    <TextView
+                        android:id = "@+id/km_1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "km"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id = "@+id/percentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:text = "       / "/>
+                    <TextView
+                        android:id = "@+id/viewPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:text = ""/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/todayDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "오늘의 주행거리"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/binggrae" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id = "@+id/viewTodayDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:text = "금일주행거리"/>
+                    <TextView
+                        android:id = "@+id/km_2"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "km"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/binggrae"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+                <Button
+                    android:id = "@+id/addDistanceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "추가"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/binggrae"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_add_work_block"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/recentDistance"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop = "10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "최근 주행거리"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/binggrae" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id = "@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

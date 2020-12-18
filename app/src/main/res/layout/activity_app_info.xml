@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.all_car.AppInfoActivity"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/binggrae"
+        android:textColor="@color/black"
+        android:textSize = "40dp"
+        android:text="App Info"
+        android:layout_marginTop="20dp"
+        android:gravity = "center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!--<ImageView
+            android:id = "@+id/ci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/univ_ci" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/binggrae"
+                android:textColor="@color/black"
+                android:textSize = "30dp"
+                android:text="- 개발자 소개 -"
+                android:layout_marginTop="70dp"
+                android:gravity = "center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/binggrae"
+                android:textColor="@color/black"
+                android:textSize = "20dp"
+                android:text="이재원 (App)"
+                android:layout_marginTop="20dp"
+                android:gravity = "center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/binggrae"
+                android:textColor="@color/black"
+                android:textSize = "20dp"
+                android:text="이종열 (Web)"
+                android:layout_marginTop="20dp"
+                android:gravity = "center"/>
+
+            <Button
+                android:id = "@+id/gotoWebBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/binggrae"
+                android:textColor="@color/black"
+                android:textSize = "20dp"
+                android:text="웹으로 이동"
+                android:layout_marginTop="180dp"
+                android:gravity = "center"
+                android:background="@drawable/block"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

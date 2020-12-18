@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.all_car.SettingInfoActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <EditText
+        android:id = "@+id/inputBrand"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint = "제조사를 선택하세요"
+        android:textAlignment="center"
+        android:fontFamily="@font/binggrae"
+        android:layout_marginTop="70dp"
+        android:inputType="textNoSuggestions"
+        android:focusable="false"/>
+    <EditText
+        android:id = "@+id/inputCar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint = "차종을 선택하세요"
+        android:textAlignment="center"
+        android:fontFamily="@font/binggrae"
+        android:layout_marginTop="50dp"
+        android:inputType="textNoSuggestions"
+        android:focusable="false"/>
+    <EditText
+        android:id = "@+id/inputTrim"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint = "트림을 선택하세요"
+        android:textAlignment="center"
+        android:fontFamily="@font/binggrae"
+        android:layout_marginTop="50dp"
+        android:inputType="textNoSuggestions"
+        android:focusable="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:id = "@+id/inputYear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint = "연도 입력"
+            android:textAlignment="center"
+            android:fontFamily="@font/binggrae"
+            android:inputType="textNoSuggestions"
+            android:focusable="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text = "년"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/binggrae"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id = "@+id/inputMonth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint = "월 입력"
+            android:textAlignment="center"
+            android:fontFamily="@font/binggrae"
+            android:inputType="textNoSuggestions"
+            android:focusable="false"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text = "월"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/binggrae"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id = "@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/block"
+        android:text = "다음"
+        android:textSize="20dp"
+        android:fontFamily="@font/binggrae"
+        android:textStyle="bold" />
+</LinearLayout>

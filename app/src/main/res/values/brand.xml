@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brand">
+        <item>현대</item>
+        <item>기아</item>
+        <item>쉐보레</item>
+        <item>르노</item>
+        <item>쌍용</item>
+    </string-array>
+</resources>

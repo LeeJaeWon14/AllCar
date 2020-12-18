@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trim">
+        <item>가솔린</item>
+        <item>디젤 (경유)</item>
+        <item>LPG</item>
+        <item>하이브리드 (가솔린)</item>
+        <item>전기</item>
+        <item>수소</item>
+    </string-array>
+</resources>

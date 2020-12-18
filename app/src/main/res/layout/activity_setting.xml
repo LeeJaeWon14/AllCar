@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.all_car.SettingActivity"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical" >
+    <Button
+        android:id = "@+id/setNickname"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text = "닉네임 재설정"
+        android:textSize = "20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_add_work_block"
+        android:fontFamily="@font/binggrae"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id = "@+id/setLogout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text = "회원탈퇴"
+        android:textSize = "20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_add_work_block"
+        android:fontFamily="@font/binggrae"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id = "@+id/viewAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text = "앱 소개"
+        android:textSize = "20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_add_work_block"
+        android:fontFamily="@font/binggrae"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"/>
+</LinearLayout>

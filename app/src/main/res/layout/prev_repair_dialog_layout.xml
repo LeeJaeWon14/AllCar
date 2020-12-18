@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity = "center"
+    android:paddingLeft="15dp"
+    android:paddingRight = "15dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "정비 기록 입력"
+        android:gravity="center"
+        android:textStyle = "bold"
+        android:textColor = "@color/black"
+        android:fontFamily="@font/binggrae"
+        android:textSize = "25dp" />
+    <RadioGroup
+        android:id = "@+id/rdoGroup_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id = "@+id/rdoEngine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "엔진룸"
+            android:textStyle = "bold"
+            android:fontFamily="@font/binggrae"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id = "@+id/rdoFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "전면부"
+            android:textStyle = "bold"
+            android:fontFamily="@font/binggrae"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id = "@+id/rdoBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "하부"
+            android:textStyle = "bold"
+            android:fontFamily="@font/binggrae"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id = "@+id/rdoSus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "서스펜션"
+            android:textStyle = "bold"
+            android:fontFamily="@font/binggrae"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ListView
+            android:id = "@+id/listItems_engine_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="20dp"
+            android:divider = "@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+        <ListView
+            android:id = "@+id/listItems_front_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="20dp"
+            android:divider = "@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+        <ListView
+            android:id = "@+id/listItems_bottom_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="20dp"
+            android:divider = "@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+        <ListView
+            android:id = "@+id/listItems_sus_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="20dp"
+            android:divider = "@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id = "@+id/viewParts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = ""
+            android:gravity="center"
+            android:textStyle = "bold"
+            android:textColor = "@color/black"
+            android:fontFamily="@font/binggrae"
+            android:textSize = "30dp"
+            android:layout_marginTop="150dp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id = "@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:id = "@+id/chkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "시간으로 입력하기"
+            android:fontFamily="@font/binggrae"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft = "20dp"
+            android:paddingRight = "20dp"
+            android:gravity="center">
+            <EditText
+                android:id = "@+id/inputRecord"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint = "입력하세요"
+                android:textAlignment="center"/>
+            <TextView
+                android:id = "@+id/record_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "km"
+                android:gravity="center"
+                android:textStyle = "bold"
+                android:textColor = "@color/black"
+                android:fontFamily="@font/binggrae"
+                android:textSize = "20dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id = "@+id/record_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/block"
+        android:fontFamily="@font/binggrae"
+        android:textStyle="bold"
+        android:textSize = "20dp"
+        android:text = "입력"
+        android:textColor = "@color/black"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

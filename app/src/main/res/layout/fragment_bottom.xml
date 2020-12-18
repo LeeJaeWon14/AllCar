@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "하부"
+        android:gravity="center"
+        android:fontFamily="@font/binggrae"
+        android:textSize = "30dp"
+        android:textStyle = "bold"
+        android:textColor = "@color/black"
+        android:layout_marginTop="50dp"/>
+    <ListView
+        android:id = "@+id/listItems_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="20dp"
+        android:divider = "@android:color/transparent"
+        android:layout_marginTop="30dp">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop = "10dp"
+    android:paddingBottom="10dp">
+    <android.support.v4.widget.NestedScrollView
+        android:id = "@+id/refuelScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CalendarView
+                android:id = "@+id/calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </CalendarView>
+            <EditText
+                android:id = "@+id/add_refuel_edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "날짜를 선택하세요"
+                android:textAlignment="center"
+                android:fontFamily="@font/binggrae"
+                android:inputType="textNoSuggestions"
+                android:focusable="false" />
+            <EditText
+                android:id = "@+id/add_refuel_edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "장소를 입력하세요"
+                android:textAlignment="center"
+                android:fontFamily="@font/binggrae"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id = "@+id/add_refuel_edit_price"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "가격을 입력하세요"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/binggrae" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "원"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/binggrae"
+                    android:textSize = "20dp"
+                    android:textColor = "@color/black" />
+            </LinearLayout>
+            <Button
+                android:id = "@+id/add_refuel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/block"
+                android:fontFamily="@font/binggrae"
+                android:textStyle="bold"
+                android:textColor = "@color/black"
+                android:text = "추가하기"
+                android:layout_marginTop="20dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

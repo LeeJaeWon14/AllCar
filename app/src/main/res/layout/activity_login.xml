@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghkdw.all_car.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "e-mail : "
+            android:textSize = "25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id = "@+id/inputEmail"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Input your e-mail"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/binggrae"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "\@"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/binggrae"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <!--<Spinner
+                android:id = "@+id/domainSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>-->
+            <EditText
+                android:id = "@+id/inputDomain"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint = "Input your domain "
+                android:textAlignment="center"
+                android:fontFamily="@font/binggrae"
+                android:focusable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp">
+            <Button
+                android:id = "@+id/requestCode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text = "인증요청"
+                android:fontFamily="@font/binggrae"
+                android:textStyle = "bold"
+                android:background="@drawable/block"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/secretCodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "인증번호 : "
+                android:textSize = "25dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/binggrae"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id = "@+id/inputCode"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint = "Input Seceret Code"
+                android:textAlignment="center"
+                android:fontFamily="@font/binggrae"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="140dp">
+        <Button
+            android:id = "@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:fontFamily="@font/binggrae"
+            android:textStyle="bold"
+            android:textSize = "20dp"
+            android:text = "로그인"/>
+    </LinearLayout>
+</LinearLayout>
