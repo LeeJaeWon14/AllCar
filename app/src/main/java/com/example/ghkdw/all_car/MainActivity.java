@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import me.relex.circleindicator.CircleIndicator;
 
+//로그인 후 보여지는 메인 부분의 Activity
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomButtons;
     FragmentPagerAdapter adapterViewPager;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //자동로그인 후 부여되는 개인 코드
         code = getIntent().getStringExtra("code");
 
         bottomButtons = (BottomNavigationView)findViewById(R.id.bottom_navigation);
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         indicator.setViewPager(viewPager);
 
 
+        //메인 UI 하단에 Navi 버튼 리스너
         bottomButtons.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //ViewPager에 탑재될 Adapter
     public static class MyPagerAdapter extends FragmentPagerAdapter {
         private static int NUM_ITEMS = 3;
 
