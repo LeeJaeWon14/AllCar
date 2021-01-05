@@ -12,12 +12,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
+//Splash 화면을 보여주는 Activity
 public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //자동 로그인 인증정보를 저장할 File System
         try {
             FileInputStream inFs = openFileInput("file.txt");
             byte[] txt = new byte[30];
@@ -51,6 +53,7 @@ public class SplashActivity extends AppCompatActivity {
         }
     }
 
+    //인증 확인을 물어보는 Dialog 실행 메소드
     private void showConfirm(String msg) {
         final View dialogView = (View)View.inflate(SplashActivity.this, R.layout.only_ok_or_cancel_dialog, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(SplashActivity.this);
