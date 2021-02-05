@@ -9,3 +9,5 @@
 # SplashActivity에서 자동로그인 판별
 # 소모품 및 부품 별 차계부 작성 지원
 # 한국석유공사 표준유가 API를 통한 XML Parsing으로 현재 유가와 주유 내역 작성 가능
+
+![image](https://user-images.githubusercontent.com/65227900/106975738-6b6f1a80-679a-11eb-9b37-3aa2e918d4e8.png)
