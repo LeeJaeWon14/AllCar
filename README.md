@@ -1,8 +1,8 @@
 # AllCar (Car Management Application)
 
-개발 버전 -> Java8 / Android 8.0(Oreo)
-DB ->  Oracle 11g (Jsp 서버와 통신을 하여 오라클 연동)
-API -> 한국석유공사 표준유가 API (XML Parsing)
+1. 개발 버전 -> Java8 / Android 8.0(Oreo)
+2. DB ->  Oracle 11g (Jsp 서버와 통신을 하여 오라클 연동)
+3. API -> 한국석유공사 표준유가 API (XML Parsing)
 
 
 Fragment와 ViewPager를 이용한 메인 UI 구현
